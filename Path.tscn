@@ -8,7 +8,6 @@ scale = Vector2( 10, 10 )
 [node name="Path0" type="AnimatedSprite" parent="."]
 modulate = Color( 0.356863, 0.67451, 0.392157, 1 )
 frames = ExtResource( 1 )
-frame = 2
 playing = true
 centered = false
 
@@ -16,7 +15,6 @@ centered = false
 modulate = Color( 0.356863, 0.67451, 0.392157, 1 )
 position = Vector2( 16, 0 )
 frames = ExtResource( 1 )
-frame = 2
 playing = true
 centered = false
 
@@ -24,6 +22,5 @@ centered = false
 modulate = Color( 0.356863, 0.67451, 0.392157, 1 )
 position = Vector2( 32, 0 )
 frames = ExtResource( 1 )
-frame = 2
 playing = true
 centered = false
