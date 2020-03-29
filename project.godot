@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FreePixelEffect"
+config/name="PixelEffect"
 run/main_scene="res://Demo.tscn"
 
 [display]
