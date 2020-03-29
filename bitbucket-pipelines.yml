@@ -6,7 +6,7 @@ pipelines:
         script:
           - git submodule update --recursive --init
           - apt-get update && apt-get install -y zip
-          - zip -r FreePixelEffect.zip .
+          - zip -r FreePixelEffect.zip . -x bitbucket-pipelines.yml *.git*
           - pipe: atlassian/bitbucket-upload-file:0.1.3
             variables:
               BITBUCKET_USERNAME: $BITBUCKET_USERNAME
