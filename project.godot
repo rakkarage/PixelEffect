@@ -17,6 +17,7 @@ _global_script_class_icons={
 
 config/name="PixelEffect"
 run/main_scene="res://Demo.tscn"
+config/icon="res://icon.png"
 
 [display]
 
