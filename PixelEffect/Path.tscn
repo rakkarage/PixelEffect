@@ -39,7 +39,6 @@ flip_h = true
 [node name="Path4" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.74902, 0.247059, 1 )
 position = Vector2( 0, 16 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
@@ -47,7 +46,6 @@ centered = false
 [node name="Path5" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.74902, 0.247059, 1 )
 position = Vector2( 16, 16 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
@@ -55,7 +53,6 @@ centered = false
 [node name="Path6" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.74902, 0.247059, 1 )
 position = Vector2( 32, 16 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
@@ -70,7 +67,6 @@ centered = false
 [node name="Path8" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.247059, 0.74902, 1 )
 position = Vector2( 0, 32 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
@@ -79,7 +75,6 @@ flip_h = true
 [node name="Path9" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.247059, 0.74902, 1 )
 position = Vector2( 16, 32 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
@@ -88,7 +83,6 @@ flip_h = true
 [node name="Path10" type="AnimatedSprite" parent="."]
 modulate = Color( 0.247059, 0.247059, 0.74902, 1 )
 position = Vector2( 32, 32 )
-scale = Vector2( 1, 1 )
 frames = ExtResource( 1 )
 playing = true
 centered = false
