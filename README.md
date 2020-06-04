@@ -4,6 +4,7 @@ Pixel-perfect animated path effect.
 
 - <https://godotmarketplace.com/publisher/henry-software/>
 - <https://bitbucket.org/rakkarage/pixeleffect/issues>
+- <https://github.com/rakkarage/pixeleffect/issues>
 
 ## Submodules
 
