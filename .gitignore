@@ -3,3 +3,4 @@
 *.csproj
 *.sln
 Properties/
+export_presets.cfg
