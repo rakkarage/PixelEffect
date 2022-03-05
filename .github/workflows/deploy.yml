@@ -1,4 +1,4 @@
-on: [push]
+on: [push, workflow_dispatch]
 env:
   GODOT_VERSION: 3.3.4
   FILE_NAME: PixelEffect
