@@ -2,16 +2,9 @@
 
 Pixel-perfect animated path effect.
 
-- <https://godotmarketplace.com/publisher/henry-software/>
-- <https://bitbucket.org/rakkarage/pixeleffect/issues>
-- <https://github.com/rakkarage/pixeleffect/issues>
+- <https://henrysoftware.itch.io/godot-pixel-effect>
+- <https://guthub.com/rakkarage/PixelEffect/>
+- <https://rakkarage.github.io/PixelEffect/>
+- <https://bitbucket.org/rakkarage/PixelEffect/>
 
-## Submodules
-
-To include submodules, clone with the --recursive flag:
-
-`git clone --recursive https://bitbucket.org/rakkarage/PixelEffect.git`
-
-or download a zip from bitbucket (bitbucket-pipelines.yml) which includes all submodules.
-
-<https://bitbucket.org/rakkarage/pixeleffect/downloads/>
+[![.github/workflows/deploy.yml](https://github.com/rakkarage/PixelEffect/actions/workflows/deploy.yml/badge.svg)](https://github.com/rakkarage/PixelEffect/actions/workflows/deploy.yml)
