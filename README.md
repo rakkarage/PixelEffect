@@ -1,6 +1,6 @@
 # PixelEffect
 
-<img style="float: right;" src="icon.png">
+<img align="right" src="icon.png">
 
 Pixel-perfect animated path effect.
 
