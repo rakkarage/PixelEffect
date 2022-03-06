@@ -33,6 +33,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - name: source
+        if: ${{ matrix.channel == 'web'}}
+        uses: actions/upload-artifact@v1
+        with:
+          name: source
+          path: ./
+      - if: ${{ matrix.channel == 'web'}}
+        uses: actions/download-artifact@v3
+        with:
+          name: source
+          path: source/
       - name: export
         run: |
           mkdir -v -p ~/.local/share/godot/templates
@@ -52,10 +63,6 @@ jobs:
         with:
           name: ${{ matrix.channel }}
           path: ./build/${{ matrix.channel }}
-      - uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: ./build/${{ matrix.channel }}
       - name: butler
         run: |
           apt-get update && apt-get install -y curl
@@ -63,3 +70,7 @@ jobs:
           unzip butler.zip
           chmod +x butler
           ./butler push ./build/${{ matrix.channel }} ${ITCHIO_USERNAME}/${ITCHIO_GAME}:${{ matrix.channel }}
+      - name: butler source
+        if: ${{ matrix.channel == 'web'}}
+        run: ./butler push source/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:source
+
