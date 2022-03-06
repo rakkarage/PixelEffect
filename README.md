@@ -1,5 +1,7 @@
 # PixelEffect
 
+<img style="float: right;" src="icon.png">
+
 Pixel-perfect animated path effect.
 
 - <https://henrysoftware.itch.io/godot-pixel-effect>
