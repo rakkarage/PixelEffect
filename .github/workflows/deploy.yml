@@ -34,12 +34,12 @@ jobs:
         with:
           submodules: true
       - name: source
-        if: ${{ matrix.channel == 'web'}}
+        if: ${{matrix.channel == 'web'}}
         uses: actions/upload-artifact@v1
         with:
           name: source
           path: ./
-      - if: ${{ matrix.channel == 'web'}}
+      - if: ${{matrix.channel == 'web'}}
         uses: actions/download-artifact@v3
         with:
           name: source
@@ -48,29 +48,28 @@ jobs:
         run: |
           mkdir -v -p ~/.local/share/godot/templates
           mv /root/.local/share/godot/templates/${GODOT_VERSION}.stable ~/.local/share/godot/templates/${GODOT_VERSION}.stable
-          mkdir -v -p ./build/${{ matrix.channel }}
-          godot -v --export "${{ matrix.type }}" ./build/${{ matrix.channel }}/${{ matrix.file }}.${{ matrix.ext }}
+          mkdir -v -p ./build/${{matrix.channel}}
+          godot -v --export "${{matrix.type}}" ./build/${{matrix.channel}}/${{matrix.file}}.${{matrix.ext}}
       - name: rsync
-        if: ${{ matrix.channel == 'web'}}
+        if: ${{matrix.channel == 'web'}}
         run: apt-get update && apt-get install -y rsync
       - name: gh-pages
-        if: ${{ matrix.channel == 'web'}}
+        if: ${{matrix.channel == 'web'}}
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           branch: gh-pages
-          folder: ./build/${{ matrix.channel }}
+          folder: ./build/${{matrix.channel}}
       - uses: actions/upload-artifact@v1
         with:
-          name: ${{ matrix.channel }}
-          path: ./build/${{ matrix.channel }}
+          name: ${{matrix.channel}}
+          path: ./build/${{matrix.channel}}
       - name: butler
         run: |
           apt-get update && apt-get install -y curl
           curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
           unzip butler.zip
           chmod +x butler
-          ./butler push ./build/${{ matrix.channel }} ${ITCHIO_USERNAME}/${ITCHIO_GAME}:${{ matrix.channel }}
+          ./butler push ./build/${{matrix.channel}} ${ITCHIO_USERNAME}/${ITCHIO_GAME}:${{matrix.channel}}
       - name: butler source
-        if: ${{ matrix.channel == 'web'}}
+        if: ${{matrix.channel == 'web'}}
         run: ./butler push source/ ${ITCHIO_USERNAME}/${ITCHIO_GAME}:source
-
