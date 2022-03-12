@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{secrets.GITHUB_TOKEN}}
+          compressOnly: true
+      - if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Compressed Images Nightly
+          branch-suffix: timestamp
+          commit-message: Compressed Images
+          body: ${{steps.calibre.outputs.markdown}}
