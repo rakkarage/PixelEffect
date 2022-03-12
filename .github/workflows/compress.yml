@@ -10,10 +10,11 @@ jobs:
         with:
           githubToken: ${{secrets.GITHUB_TOKEN}}
           compressOnly: true
+          ignorePaths: ./icon.png
       - if: steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v3
         with:
-          title: Compressed Images Nightly
+          title: Compress Images
           branch-suffix: timestamp
-          commit-message: Compressed Images
+          commit-message: Compress Images
           body: ${{steps.calibre.outputs.markdown}}
