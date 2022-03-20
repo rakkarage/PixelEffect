@@ -9,5 +9,5 @@ Pixel-perfect animated path effect.
 - 📃 <http://guthub.com/rakkarage/PixelEffect>
 - 📃 <http://bitbucket.org/rakkarage/PixelEffect>
 
-[![.github/workflows/compress.yml](https://github.com/rakkarage/PixelEffect/actions/workflows/compress.yml/badge.svg)](https://github.com/rakkarage/PixelEffect/actions/workflows/deploy.yml)
+[![.github/workflows/compress.yml](https://github.com/rakkarage/PixelEffect/actions/workflows/compress.yml/badge.svg)](https://github.com/rakkarage/PixelEffect/actions/workflows/compress.yml)
 [![.github/workflows/deploy.yml](https://github.com/rakkarage/PixelEffect/actions/workflows/deploy.yml/badge.svg)](https://github.com/rakkarage/PixelEffect/actions/workflows/deploy.yml)
