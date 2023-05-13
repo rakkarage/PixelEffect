@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1vi0ui1nb6xc"]
+[gd_scene load_steps=2 format=3 uid="uid://b1vi0ui1nb6xc"]
 
 [ext_resource type="SpriteFrames" uid="uid://dmfytxg5uq6at" path="res://PixelEffect/PathFrames.tres" id="1"]
-[ext_resource type="Theme" uid="uid://cka558yiv861g" path="res://Interface/Theme.tres" id="1_pal5j"]
 
 [node name="Nine" type="Control"]
 layout_mode = 3
@@ -10,7 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_pal5j")
 
 [node name="Panel" type="PanelContainer" parent="."]
 layout_mode = 1

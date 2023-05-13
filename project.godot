@@ -29,6 +29,11 @@ Random="*res://Core/Random.gd"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[gui]
+
+theme/custom="res://Interface/Theme.tres"
+theme/custom_font="res://Interface/Font/SuperWhite.fnt"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
