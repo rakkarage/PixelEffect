@@ -1,3 +1,9 @@
 [submodule "Intro"]
 	path = Intro
 	url = ../Intro
+[submodule "Core"]
+	path = Core
+	url = ../Core
+[submodule "Interface"]
+	path = Interface
+	url = ../Interface

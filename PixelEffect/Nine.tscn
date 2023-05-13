@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bouu5xl3wn04h"]
+[gd_scene load_steps=2 format=3 uid="uid://b1vi0ui1nb6xc"]
 
-[ext_resource type="SpriteFrames" uid="uid://ca4w5spqn274e" path="res://PixelEffect/PathFrames.tres" id="1"]
+[ext_resource type="SpriteFrames" uid="uid://dmfytxg5uq6at" path="res://PixelEffect/PathFrames.tres" id="1"]
 
 [node name="Nine" type="Control"]
 layout_mode = 3

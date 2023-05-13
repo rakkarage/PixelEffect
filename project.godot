@@ -20,6 +20,10 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://icon.png"
 
+[autoload]
+
+Random="*res://Core/Random.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"
