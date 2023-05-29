@@ -32,7 +32,8 @@ window/stretch/aspect="expand"
 [gui]
 
 theme/custom="res://Interface/Theme.tres"
-theme/custom_font="res://Interface/Font/SuperWhite.fnt"
+theme/custom_font="res://Interface/Font/SuperWhite.tres"
+
 
 [rendering]
 
