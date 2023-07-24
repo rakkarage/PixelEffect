@@ -46,9 +46,13 @@ jobs:
           path: ./source
       - name: export
         run: |
+          ls
           mkdir -v -p ~/.local/share/godot/templates
+          ls
           mv /root/.local/share/godot/templates/$GODOT_VERSION.stable ~/.local/share/godot/templates/$GODOT_VERSION.stable
+          ls
           mkdir -v -p ./build/${{matrix.channel}}
+          ls build
           godot -v --export "${{matrix.type}}" ./build/${{matrix.channel}}/${{matrix.file}}.${{matrix.ext}}
       - name: rsync
         if: ${{matrix.channel == 'web'}}
