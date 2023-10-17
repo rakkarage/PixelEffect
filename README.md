@@ -6,11 +6,11 @@ Pixel-perfect animated path effect.
 
 - 📦 <http://henrysoftware.itch.io/godot-pixel-effect> : more pixel assets
 - 🌐 <http://rakkarage.github.io/PixelEffect> : run in browser
-- 📃 <http://guthub.com/rakkarage/PixelEffect> : you are here, maybe
+- 📃 <http://github.com/rakkarage/PixelEffect> : you are here, maybe
 
 ## Installation
 
-- `git clone --recurse-submodules http://guthub.com/rakkarage/PixelEffect`
+- `git clone --recurse-submodules http://github.com/rakkarage/PixelEffect`
 - Or `git submodule init` and `git submodule update`.
 
 ---
