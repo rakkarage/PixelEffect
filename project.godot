@@ -12,18 +12,19 @@ config_version=5
 
 config/name="PixelEffect"
 config/description="Pixel-perfect animated path effect."
+config/tags=PackedStringArray("2d", "animation", "demo")
 run/main_scene="res://Demo.tscn"
-config/features=PackedStringArray("4.1")
+config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0.231373, 0.262745, 0.321569, 1)
-boot_splash/image="res://Intro/Henry.png"
+boot_splash/image="res://addons/Intro/Henry.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://icon.png"
 
 [autoload]
 
-Random="*res://Core/Random.gd"
-Cursor="*res://Interface/Cursor.tscn"
+Random="*res://addons/Core/Random.gd"
+Cursor="*res://addons/Interface/Cursor.tscn"
 
 [display]
 
@@ -32,8 +33,8 @@ window/stretch/aspect="expand"
 
 [gui]
 
-theme/custom="res://Interface/Theme.tres"
-theme/custom_font="res://Interface/Font/SuperWhite.fnt"
+theme/custom="res://addons/Interface/Theme.tres"
+theme/custom_font="res://addons/Interface/Font/SuperWhite.fnt"
 
 [rendering]
 
